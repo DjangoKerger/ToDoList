@@ -5,10 +5,21 @@
   </div>
 
   <div class="box">
+
+
+    <% newListItems.forEach(function(item){ %>
+      <div class="item">
+        <input type="checkbox">
+        <p><%=  newListItems[i].name  %></p>
+      </div>
+
+    <% }) %>
+
+
     <% for (let i=0; i<newListItems.length; i++) { %>
       <div class="item">
         <input type="checkbox">
-        <p><%=  newListItems[i]  %></p>
+        <p><%=  newListItems[i].name  %></p>
       </div>
       <% } %>
 
