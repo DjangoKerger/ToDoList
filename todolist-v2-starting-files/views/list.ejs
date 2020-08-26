@@ -23,6 +23,7 @@
         <input type="checkbox">
         <p><%=  newListItems[i].name  %></p>
       </div>
+      <input type="hidden" name="listName" value="<%= listTitle %>"></input>
       <% } %>
 
       <form class="item" action="/" method="post">
